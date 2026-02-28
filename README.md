@@ -7,7 +7,6 @@ my personal dev portfolio. pure html/css, no frameworks, pure bliss.
 - simple html + css
 - font: space grotesk + jetbrains mono fonts
 - intersection observer for scroll animations, those are imp :)
-- css dot grid background (inspired by linear.app)
 
 ## features
 

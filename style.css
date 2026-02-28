@@ -446,6 +446,19 @@ body::after {
 }
 
 
+/* ---- footer ---- */
+
+.site-footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--text-muted);
+    font-family: var(--ff-mono);
+    font-size: .75rem;
+    letter-spacing: 1px;
+    opacity: .5;
+}
+
+
 /* ---- responsive ---- */
 /* TODO: test on actual phone, might need to tweak padding more */
 

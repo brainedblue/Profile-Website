@@ -1,4 +1,5 @@
 # karnyadav. // portfolio
+Live site: https://zentrixmedia.in
 
 built it from scratch with pure Vanilla HTML, CSS, and JS. Zero dependencies, frameworks, clean and elegant aesthetics
 

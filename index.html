@@ -1,254 +1,259 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="karan yadav - software dev">
-    <title>karan yadav | dev</title>
-
-    <!-- fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;700&display=swap"
-        rel="stylesheet">
+    <title>Karan Yadav</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <div class="noise"></div>
+    <div class="ambient-glow" id="ambientGlow"></div>
 
-
-    <nav class="top-nav-bar">
-        <div class="nav-links-wrap">
-            <a href="#about">about</a>
-            <a href="#expertise">stack</a>
-            <a href="#work">stuff i built</a>
+    <nav class="top-nav">
+        <div class="logo">karn<span>yadav.</span></div>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#cp">CP</a>
         </div>
     </nav>
 
-    <!-- side social links -->
-    <aside class="left-socials">
-        <a href="https://github.com/brainedblue" target="_blank" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-            </svg>
-        </a>
-        <a href="https://leetcode.com/u/karnyadav" target="_blank" aria-label="LeetCode">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.083 5.083 0 0 0 .349 1.017 5.159 5.159 0 0 0 1.579 2.256l5.82 5.798a1.19 1.19 0 0 0 1.684 0l1.172-1.171a1.19 1.19 0 0 0 0-1.684l-5.82-5.798a1.19 1.19 0 0 1 0-1.684l3.868-4.14 5.406-5.788a1.374 1.374 0 0 0-.961-2.344zM20.5 13.25h-8a1.25 1.25 0 1 0 0 2.5h8a1.25 1.25 0 1 0 0-2.5z" />
-            </svg>
-        </a>
-        <a href="https://codeforces.com/profile/karnyadav" target="_blank" aria-label="Codeforces">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M4.5 7.5A1.5 1.5 0 016 9v10.5a1.5 1.5 0 01-3 0V9a1.5 1.5 0 011.5-1.5zm7.5-3A1.5 1.5 0 0113.5 6v13.5a1.5 1.5 0 01-3 0V6A1.5 1.5 0 0112 4.5zm7.5 6a1.5 1.5 0 011.5 1.5v7.5a1.5 1.5 0 01-3 0V12a1.5 1.5 0 011.5-1.5z" />
-            </svg>
-        </a>
-        <a href="https://www.linkedin.com/in/karan-yadav-572a1328a/" target="_blank" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path
-                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-            </svg>
-        </a>
-    </aside>
-
-    <main class="page-wrap">
-
-        <!-- ======== HERO ======== -->
-        <section class="big-section hero-part" id="home">
-            <div class="hero-box hide-me">
-                <p class="hi-text">hey, i'm</p>
-                <h1 class="huge-name">karn.</h1>
-            </div>
-            <div class="hero-right-text hide-me" style="transition-delay:200ms">
-                <p class="lil-an">just a</p>
-                <h2 class="sub-huge-text">dev & algo nerd<br>building cool stuff.</h2>
+    <div class="container">
+        <section class="hero reveal" id="home">
+            <h1>Build. Break.<br><i>Learn.</i> Repeat.</h1>
+            <p>I like building things end-to-end from weird experiments to working products.</p>
+            
+            <div class="socials">
+                <a href="https://github.com/karnyadavdev" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/u/karnyadav" target="_blank">LeetCode</a>
+                <a href="https://codeforces.com/profile/karnyadav" target="_blank">Codeforces</a>
+                <a href="https://www.linkedin.com/in/karan-yadav-572a1328a/" target="_blank">LinkedIn</a>
             </div>
         </section>
 
-        <!-- ======== ABOUT ======== -->
-        <section class="big-section half-n-half" id="about">
-            <div class="lefty-title hide-me">
-                <h2 class="side-text-huge">about</h2>
-            </div>
-            <div class="righty-stuff">
-
-                <div class="box-with-brackets hide-me">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-
-                    <h3>competitive programming</h3>
-                    <p class="box-sub">grinding algorithms and optimizing logic</p>
-                    <p class="box-p">i spend a decent chunk of time writing fast c++ and python code to solve weird
-                        problems.
-                        knocked out 500+ questions on dsa. rating's sitting at 1600 on <a
-                            href="https://leetcode.com/u/karnyadav" target="_blank"
-                            class="magic-link-inline">leetcode</a> (top 25%), and 1100+ on
-                        <a href="https://codeforces.com" target="_blank" class="magic-link-inline">codeforces</a>.
-                    </p>
-                </div>
-
-                <div class="box-with-brackets hide-me" style="transition-delay:150ms">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-
-                    <h3>full-stack</h3>
-                    <p class="box-sub">building the whole iceberg</p>
-                    <p class="box-p">designing snappy frontends, heavy backends, and stealthy web scrapers. mostly
-                        juggling html/css, js, react, node, and
-                        python fastapi. sometimes i throw in gsap if things need to bounce or spin.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======== STACK ======== -->
-        <section class="big-section half-n-half" id="expertise">
-            <div class="lefty-title hide-me">
-                <h2 class="side-text-huge">stack</h2>
-            </div>
-            <div class="righty-stuff">
-                <div class="box-with-brackets hide-me">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <h3>syntax</h3>
-                    <p class="box-p">c++, python, javascript, html/css, sql.</p>
-                </div>
-
-                <div class="box-with-brackets hide-me" style="transition-delay:100ms">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <h3>frameworks</h3>
-                    <p class="box-p">react, node.js, three.js, gsap.</p>
-                </div>
-
-                <div class="box-with-brackets hide-me" style="transition-delay:200ms">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <h3>tooling</h3>
-                    <p class="box-p">git, fastapi, playwright web scraping, bash, linux.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======== EXPERIENCE ======== -->
-        <section class="big-section half-n-half" id="experience">
-            <div class="lefty-title hide-me">
-                <h2 class="side-text-huge">history</h2>
-            </div>
-            <div class="righty-stuff">
-                <div class="box-with-brackets hide-me">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <div class="box-top-row">
-                        <h3>dev intern</h3>
-                        <span class="weird-date"><a href="https://www.linkedin.com/company/hyper-pixel-games/"
-                                target="_blank" class="magic-link-inline">hyperpixel games</a> | 2 months</span>
+        <section class="section reveal" id="projects">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="project-list">
+                <div class="project-item reveal">
+                    <div class="proj-meta">
+                        <h3><a href="https://github.com/karnyadavdev/QuickDrop" target="_blank">QuickDrop ↗</a></h3>
                     </div>
-                    <ul class="bullet-points">
-                        <li>built a bunch of internal dashboards to track live game data.</li>
-                        <li>designed and coded their main interactive site from scratch.</li>
-                        <li>stack: full vanilla raw js, three.js, css magic.</li>
-                    </ul>
-                </div>
-
-                <div class="box-with-brackets hide-me" style="transition-delay:150ms">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <div class="box-top-row">
-                        <h3>core team</h3>
-                        <span class="weird-date">gdsc nsut | 2023 - 2024</span>
-                    </div>
-                    <ul class="bullet-points">
-                        <li>helped set up a pretty big icpc-style comp on codeforces.</li>
-                        <li>got 3rd place in the main entrance competition.</li>
-                        <li>ran sessions on algorithms and contest discussions.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- ======== PROJECTS ======== -->
-        <section class="big-section half-n-half" id="work">
-            <div class="lefty-title hide-me">
-                <h2 class="side-text-huge">built</h2>
-            </div>
-            <div class="righty-stuff box-grid">
-                <div class="box-with-brackets proj-box hide-me">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <a href="https://askkara.vercel.app" target="_blank" class="magic-link">askkara ai ↗</a>
-                    <p class="box-p">ai search engine hooked up to a live scraping farm so the llm actually knows what's
-                        happening right now.</p>
-                    <div class="mini-tags">
-                        <span>js</span><span>fastapi</span><span>llm</span>
+                    <div class="proj-details">
+                        <p>Cross-platform Windows & Android file sharing app designed for extreme local network speeds.</p>
+                        <ul>
+                            <li>Transfers files seamlessly across any combination of Windows (10/11) and Android devices over Wi-Fi or Ethernet.</li>
+                            <li>Hits 200+ MB/s on standard home Wi-Fi, scaling even higher on enterprise routers and wired networks.</li>
+                            <li>Handles massive payloads effortlessly with zero file or folder size limits (easily transfers 100GB+).</li>
+                            <li>Secures all local network transfers with military-grade XChaCha20-Poly1305 / X25519 end-to-end encryption.</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="box-with-brackets proj-box hide-me" style="transition-delay:150ms">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <a href="https://github.com/brainedblue/" target="_blank" class="magic-link">stealth scraper ↗</a>
-                    <p class="box-p">custom playwright concoction designed specifically to fly under enterprise bot
-                        radars.</p>
-                    <div class="mini-tags">
-                        <span>python</span><span>fastapi</span><span>playwright</span>
+
+                <div class="project-item reveal">
+                    <div class="proj-meta">
+                        <h3><a href="https://askkara.vercel.app" target="_blank">askKara ↗</a></h3>
+                        <a href="https://github.com/karnyadavdev/askKara" target="_blank" style="font-size: 0.85rem; letter-spacing: 0.05em; text-transform: uppercase;">View GitHub ↗</a>
+                    </div>
+                    <div class="proj-details">
+                        <p>Autonomous AI search engine powered by a live web-scraping infrastructure to deliver real-time, deeply researched answers.</p>
+                        <ul>
+                            <li>Crawls sites recursively, following links deeper than surface-level results rather than just scraping a search page.</li>
+                            <li>Bypasses AI-blocking on 95% of sites that block ChatGPT, Perplexity, and Gemini (including Bloomberg, WSJ, Reddit, and LinkedIn).</li>
+                            <li>Pulls rich content like images, SVGs, YouTube embeds, and Reddit comments — not just plain text.</li>
+                            <li>Streams answers in real-time with rich citations and favicons, fully supporting follow-up queries and session history.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-item reveal">
+                    <div class="proj-meta">
+                        <h3><a href="https://github.com/karnyadavdev/FontWizard" target="_blank">FontWizard ↗</a></h3>
+                    </div>
+                    <div class="proj-details">
+                        <p>The one and only app capable of changing Windows 11 system fonts entirely.</p>
+                        <ul>
+                            <li>Achieves 100% coverage across modern frameworks (WinUI3, UWP, Win32, and WebView).</li>
+                            <li>Automatically detects and matches font weights for flawless system integration.</li>
+                            <li>Safely creates automated backups of all original system fonts before modifying anything.</li>
+                            <li>Bypasses system locks by queuing protected files for replacement during reboot via the native MoveFileEx API.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-item reveal">
+                    <div class="proj-meta">
+                        <h3><a href="https://github.com/karnyadavdev/YADA-Scraper-API" target="_blank">YADA Scraper ↗</a></h3>
+                    </div>
+                    <div class="proj-details">
+                        <p>High-performance web scraping API engineered to bypass enterprise-grade security systems at scale.</p>
+                        <ul>
+                            <li>Bypasses top-tier anti-bot systems like DataDome and Cloudflare.</li>
+                            <li>Autonomous solving of complex, multi-stage security puzzles and image challenges.</li>
+                            <li>Drops extraction times by 98% (from 15s to under 200ms).</li>
+                            <li>Fools advanced algorithms tracking mouse movements and typing speeds.</li>
+                            <li>Reliably extracts dynamically loaded data from complex apps like YouTube, Reddit, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section reveal" id="experience">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="exp-grid">
+                <div class="exp-block reveal">
+                    <div class="exp-header">
+                        <h3><a href="https://zentrixmedia.in" target="_blank" style="color: inherit; text-decoration: none;">Zentrix Media ↗</a></h3>
+                        <div class="meta">Freelance Web Dev // Feb – Mar 2026</div>
+                    </div>
+                    <div class="exp-content">
+                        <ul>
+                            <li>Engineered a custom video player with highly optimized delivery, bypassing external paid CDNs while keeping loading speeds incredibly fast.</li>
+                            <li>Built custom scroll-triggered SVG animations and interactive 3D WebGL backgrounds.</li>
+                            <li>Designed custom contact forms powered by FormSubmit.co, alongside direct WhatsApp and Discord integrations for instant client communication.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="exp-block reveal">
+                    <div class="exp-header">
+                        <h3>Hyperpixel Games</h3>
+                        <div class="meta">Dev Intern // Jun – Jul 2025</div>
+                    </div>
+                    <div class="exp-content">
+                        <ul>
+                            <li>Built the company website from scratch with Node.js, handling design, development, and deployment solo.</li>
+                            <li>Automated deployment with GitHub Actions CI/CD, eliminating all manual release steps.</li>
+                            <li>Built an admin dashboard (FastAPI, SQLite, JWT) so the team could manage game listings and contact submissions without needing a developer.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="exp-block reveal">
+                    <div class="exp-header">
+                        <h3>GDSC NSUT</h3>
+                        <div class="meta">CP Department Core Team Member // 2023 – 2024</div>
+                    </div>
+                    <div class="exp-content">
+                        <ul>
+                            <li>Selected as CP Department Core Team Member (Ranked 3rd in entrance selection).</li>
+                            <li>Co-organized <a href="https://codeforces.com/blog/entry/126397" target="_blank">Code Conundrum 2024 ↗</a>, an offline ICPC-style contest with 100+ participants.</li>
+                            <li>Ran weekly DSA and competitive programming sessions for 20+ students.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ======== WIP ======== -->
-        <section class="big-section half-n-half" id="active">
-            <div class="lefty-title hide-me">
-                <h2 class="side-text-huge">wip</h2>
-            </div>
-            <div class="righty-stuff box-grid">
-                <div class="box-with-brackets proj-box hide-me">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <h3 class="magic-link">zentrix media</h3>
-                    <p class="box-p">flashy, premium portfolio site for a video agency. lots of scroll scrubbing and
-                        gsap tricks.</p>
-                    <div class="mini-tags">
-                        <span>html/css</span><span>js</span><span>gsap</span>
-                    </div>
+        <section class="section reveal" id="cp">
+            <h2 class="section-title">Metrics</h2>
+            
+            <div class="stats-grid">
+                <div class="stat-box reveal">
+                    <div class="num">500+</div>
+                    <div class="label">Problems Solved</div>
                 </div>
-                <div class="box-with-brackets proj-box hide-me" style="transition-delay:150ms">
-                    <span class="lil-corner top-l"></span><span class="lil-corner top-r"></span>
-                    <span class="lil-corner bot-l"></span><span class="lil-corner bot-r"></span>
-                    <h3 class="magic-link">hyperpixel web</h3>
-                    <p class="box-p">the official landing zone for hyperpixel games. interactive 3d elements everywhere.
-                    </p>
-                    <div class="mini-tags">
-                        <span>three.js</span><span>gsap</span><span>web</span>
-                    </div>
+                <div class="stat-box reveal">
+                    <div class="num">1600</div>
+                    <div class="label">LeetCode Rating</div>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="num">3rd</div>
+                    <div class="label">GDSC Competition Rank</div>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="num">1100+</div>
+                    <div class="label">Codeforces Rating</div>
+                </div>
+                <div class="stat-box reveal">
+                    <div class="num" style="font-size: 2.2rem; line-height: 1.2; padding-bottom: 0.5rem;"><a href="https://codeforces.com/blog/entry/126397" target="_blank" style="color: inherit;">Code Conundrum ↗</a></div>
+                    <div class="label">Co-Organized Contest</div>
                 </div>
             </div>
         </section>
 
-    </main>
+        <section class="section reveal" id="hobbies">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies-grid">
+                <div class="stat-box reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.75rem; opacity: 0.8;"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.2a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5 21h14"/></svg>
+                    <div class="num" style="font-size: 2.2rem; line-height: 1.2;">Chess</div>
+                </div>
+                <div class="stat-box reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.75rem; opacity: 0.8;"><circle cx="10" cy="10" r="6" /><path d="M14.24 14.24l4.76 4.76" /><circle cx="18" cy="6" r="2" fill="var(--text-dim)" stroke="none" /></svg>
+                    <div class="num" style="font-size: 2.2rem; line-height: 1.2;">Table Tennis</div>
+                </div>
+                <div class="stat-box reveal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-dim)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 0.75rem; opacity: 0.8;"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                    <div class="num" style="font-size: 2.2rem; line-height: 1.2;">Reading</div>
+                </div>
+            </div>
+        </section>
 
-    <footer class="site-footer">
-        <p>© 2026 karan yadav</p>
-    </footer>
+        <footer>
+            karnyadav. // 2026
+        </footer>
+    </div>
+
+    <!-- Theme Toggle & Overlay -->
+    <button id="themeToggle" class="theme-toggle">
+        <svg id="moonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: block;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+    </button>
+    <div id="themeOverlay" class="theme-overlay"></div>
 
     <script>
-        // scroll reveal - shows elements when they enter viewport
-        const revealObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show-me');
+        // theme toggle
+        const btn = document.getElementById('themeToggle');
+        const moon = document.getElementById('moonIcon');
+        const sun = document.getElementById('sunIcon');
+        const root = document.documentElement;
+        const ovr = document.getElementById('themeOverlay');
+        
+        btn.addEventListener('click', () => {
+            let isL = root.getAttribute('data-theme') === 'light';
+            ovr.classList.add('active');
+            
+            setTimeout(() => {
+                if (isL) {
+                    root.removeAttribute('data-theme');
+                    moon.style.display = 'none';
+                    sun.style.display = 'block';
                 } else {
-                    entry.target.classList.remove('show-me');  // reset so it replays
+                    root.setAttribute('data-theme', 'light');
+                    moon.style.display = 'block';
+                    sun.style.display = 'none';
                 }
-            });
-        }, {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px"
+                setTimeout(() => ovr.classList.remove('active'), 50);
+            }, 200);
         });
 
-        document.querySelectorAll('.hide-me').forEach(el => revealObserver.observe(el));
+        // mouse glow
+        if (window.innerWidth > 768) {
+            const glow = document.getElementById('ambientGlow');
+            window.addEventListener('mousemove', (e) => {
+                let x = (e.clientX / window.innerWidth - 0.5) * 20;
+                let y = (e.clientY / window.innerHeight - 0.5) * 20;
+                if (glow) glow.style.transform = `translate(calc(-50% + ${x}%), calc(-50% + ${y}%))`;
+            });
+        }
+
+        // scroll anims
+        const obs = new IntersectionObserver((es) => {
+            es.forEach(e => {
+                if (e.isIntersecting) e.target.classList.add('visible');
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
     </script>
 </body>
-
 </html>

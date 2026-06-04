@@ -1,16 +1,6 @@
-# portfolio
+# karnyadav. // portfolio
 
-my personal dev portfolio. pure html/css, no frameworks, pure bliss.
+i built it from scratch with pure Vanilla HTML, CSS, and JS. Zero dependencies, frameworks, clean and elegant aesthetics
 
-## stack
-
-- simple html + css
-- font: space grotesk + jetbrains mono fonts
-- intersection observer for scroll animations, those are imp :)
-
-## features
-
-- scroll-triggered fade-in animations
-- kind of techy modern feel
-- responsive layout (mobile friendly)
-- dot grid + glow bg
+## Tech Stack
+- **HTML5, CSS3, Vanilla J, Typography: Space Grotesk, Playfair Display**

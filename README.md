@@ -1,5 +1,5 @@
 # karnyadav. // portfolio
-Live site: https://zentrixmedia.in
+Live site: https://karnyadav.vercel.app
 
 built it from scratch with pure Vanilla HTML, CSS, and JS. Zero dependencies, frameworks, clean and elegant aesthetics
 
